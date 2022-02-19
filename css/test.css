@@ -1,0 +1,202 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+/*Importação de icones do site Font Awesome*/
+
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bangers&family=Courgette&family=Oswald:wght@300;400;700&family=Righteous&display=swap');
+/*Importação de fonts do site Google Fonts
+
+Fontes disponíveis 
+
+Oswald, Allison, Righteous, Courgette, Bangers */
+
+
+:root{
+	--font-primary:"Cinematografica", serif;
+	--font-secundary: "Oswald", serif;
+    --corpadrao: #021012;
+}
+
+.your-style {
+	/*Declaração de font externa*/
+	font-family: 'Cinematografica', serif;
+	font-weight: bold;
+	font-style: normal;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #021012;
+}
+
+.slider
+{
+	width: 800px;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.slides
+{
+	width: 500%;
+	height: 500px;
+	display: flex;
+}
+
+.slides input
+{
+	display: none;
+}
+
+.slide 
+{
+width: 20%;
+transition: 2s;
+}
+
+.slide img 
+{
+	width: 800px;
+	height: 500px;
+}
+
+.navigation-manual
+{
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn
+{
+	border: 2px solid #0a5863;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.manual-btn:not(:last-child)
+{
+	margin-right: 40px;
+}
+
+.manual-btn:hover
+{
+	background: #0a5863;
+}
+
+#radio1:checked ~ .first
+{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first
+{
+	margin-left: -20%;
+}
+
+#radio3:checked ~ .first
+{
+	margin-left: -40%;
+}
+
+#radio4:checked ~ .first
+{
+	margin-left: -60%;
+}
+
+#radio5:checked ~ .first
+{
+	margin-left: -80%;
+}
+
+#radio6:checked ~ .first
+{
+	margin-left: -100%;
+}
+
+.navigation-auto 
+{
+	position: absolute;
+	display: flex;
+	width: 800px;
+	justify-content: center;
+	margin-top: 460px;
+}
+
+.navigation-auto div 
+{
+	border: 2px solid #0a5863;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+}
+
+.navigation-auto div:not(:last-child)
+{
+	margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 
+{
+	background: #0a5863;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 
+{
+	background: #0a5863;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 
+{
+	background: #0a5863;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 
+{
+	background: #0a5863;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 
+{
+	background: #0a5863;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 
+{
+	background: #0a5863;
+}
+
+.conteudo-audio {
+	background-color: #021012;
+	float: left;
+	width: 30%;
+	padding: 15px;
+	margin-top: 7px;
+	border-radius: 30px;
+	text-align: center;
+	margin-left: 45px;
+  }
+
+.conteudo-audio h5{
+	background-color: #021012;
+    font-family: var(--font-secundary);
+	color: rgb(86, 124, 115);
+	text-shadow: .1rem .1rem .1rem black;
+    font-size: 30px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.conteudo-audio audio {
+	background-color:#021012;
+	border: #021012;
+}
